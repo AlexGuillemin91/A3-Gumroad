@@ -1,0 +1,24 @@
+{
+  "name": "a3-gumroad",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch style.scss:css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexGuillemin91/A3-Gumroad.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexGuillemin91/A3-Gumroad/issues"
+  },
+  "homepage": "https://github.com/AlexGuillemin91/A3-Gumroad#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.0.8",
+    "sass": "^1.44.0"
+  }
+}

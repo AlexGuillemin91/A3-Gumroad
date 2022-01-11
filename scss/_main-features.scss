@@ -1,0 +1,20 @@
+.main-features{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem;
+
+    .first-feature{
+        background-color: #F7F7F7;
+        border-radius: 30px;
+
+        .text{
+            padding: 2rem;
+        }
+
+        .image{
+            padding: 2rem;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
