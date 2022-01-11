@@ -1,7 +1,7 @@
 .main-features{
     display: flex;
     flex-wrap: wrap;
-    margin: 1rem;
+    margin: 5rem 1rem;
 
     .first-feature{
         width: 100%;
@@ -18,7 +18,7 @@
             }
 
             p{
-                color: #464646;
+                color: var(--text-dark-color);
                 font-weight: 500;
             }
         }
@@ -38,8 +38,8 @@
             button{
                 border: none;
                 padding: 0.5rem 1rem;
-                background-color: #7EAAFE;
-                color: white;
+                background-color: var(--light-blue);
+                color: var(--text-light-color);
                 border-radius: 10px;
             }
         }
@@ -50,7 +50,7 @@
         margin: 1rem 0;
 
         .second-feature{
-            background-color: #7EAAFE;
+            background-color: var(--light-blue);
             border-radius: 30px;
             height: 450px;
 
@@ -58,7 +58,7 @@
                 padding: 1.5rem;
     
                 h3{
-                    color: white;
+                    color: var(--text-light-color);
                     font-size: 1.9rem;
                     font-weight: 500;
                     margin-bottom: 1rem;
@@ -82,7 +82,7 @@
                 padding: 1.5rem;
     
                 h3{
-                    color: white;
+                    color: var(--text-light-color);
                     font-size: 1.9rem;
                     font-weight: 500;
                     margin-bottom: 1rem;

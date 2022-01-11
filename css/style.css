@@ -1,3 +1,10 @@
+:root {
+  --title-dark-color: #312938;
+  --text-dark-color: #464646;
+  --text-light-color: #ffffff;
+  --light-blue: #7EAAFE;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -38,7 +45,7 @@ header ul li {
 }
 .presentation .presentation-main .presentation-text h1 {
   font-size: 2rem;
-  color: #312938;
+  color: var(--title-dark-color);
   margin-bottom: 1rem;
 }
 .presentation .presentation-main .presentation-text p {
@@ -62,7 +69,7 @@ header ul li {
 .main-features {
   display: flex;
   flex-wrap: wrap;
-  margin: 1rem;
+  margin: 5rem 1rem;
 }
 .main-features .first-feature {
   width: 100%;
@@ -78,7 +85,7 @@ header ul li {
   margin-bottom: 1rem;
 }
 .main-features .first-feature .text p {
-  color: #464646;
+  color: var(--text-dark-color);
   font-weight: 500;
 }
 .main-features .first-feature .image {
@@ -95,8 +102,8 @@ header ul li {
 .main-features .first-feature .call-to-action button {
   border: none;
   padding: 0.5rem 1rem;
-  background-color: #7EAAFE;
-  color: white;
+  background-color: var(--light-blue);
+  color: var(--text-light-color);
   border-radius: 10px;
 }
 .main-features div {
@@ -104,7 +111,7 @@ header ul li {
   margin: 1rem 0;
 }
 .main-features div .second-feature {
-  background-color: #7EAAFE;
+  background-color: var(--light-blue);
   border-radius: 30px;
   height: 450px;
 }
@@ -112,7 +119,7 @@ header ul li {
   padding: 1.5rem;
 }
 .main-features div .second-feature .text h3 {
-  color: white;
+  color: var(--text-light-color);
   font-size: 1.9rem;
   font-weight: 500;
   margin-bottom: 1rem;
@@ -131,7 +138,7 @@ header ul li {
   padding: 1.5rem;
 }
 .main-features div .third-feature .text h3 {
-  color: white;
+  color: var(--text-light-color);
   font-size: 1.9rem;
   font-weight: 500;
   margin-bottom: 1rem;
@@ -140,6 +147,45 @@ header ul li {
   padding: 2rem;
   display: flex;
   justify-content: center;
+}
+
+.premium-features h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.premium-features .call-to-action {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0 1.5rem;
+  margin-bottom: 2rem;
+}
+.premium-features .call-to-action button {
+  border: none;
+  padding: 1rem 2rem;
+  background-color: var(--light-blue);
+  color: var(--text-light-color);
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+.premium-features .call-to-action button img {
+  margin-left: 0.5rem;
+}
+.premium-features .feature {
+  margin: 2rem 1rem;
+}
+.premium-features .feature .feature-text h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.premium-features .feature .feature-text p {
+  color: var(--text-dark-color);
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=style.css.map */
