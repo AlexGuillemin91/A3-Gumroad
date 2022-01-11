@@ -3,12 +3,14 @@
   --text-dark-color: #464646;
   --text-light-color: #ffffff;
   --light-blue: #7EAAFE;
+  --salmon: #F88E8E;
+  --light-salmon: #FFD3D3;
 }
 
 header {
   display: flex;
   justify-content: space-between;
-  padding: 0 3rem;
+  padding: 0 1rem;
   border-bottom: 1px solid #d6d6d6;
   height: 5rem;
 }
@@ -17,6 +19,12 @@ header a {
   flex-direction: row;
   align-items: center;
   text-decoration: none;
+}
+header a h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: black;
+  margin-left: 1rem;
 }
 header ul {
   list-style: none;
@@ -186,6 +194,39 @@ header ul li {
 .premium-features .feature .feature-text p {
   color: var(--text-dark-color);
   font-weight: 500;
+}
+.premium-features .lastest-release {
+  margin: 1rem;
+  padding: 1.5rem 1rem 0 1rem;
+  background-color: var(--salmon);
+  border-radius: 30px;
+}
+.premium-features .lastest-release .text .news {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.premium-features .lastest-release .text .news p {
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  background-color: var(--light-salmon);
+  border-radius: 10px;
+  font-weight: 500;
+  color: black;
+}
+.premium-features .lastest-release .text h3 {
+  font-size: 1.9rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: var(--text-light-color);
+}
+.premium-features .lastest-release .text p {
+  color: var(--text-light-color);
+  font-weight: 500;
+}
+.premium-features .lastest-release .image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */
