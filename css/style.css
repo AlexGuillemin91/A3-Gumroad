@@ -5,6 +5,13 @@
   --light-blue: #7EAAFE;
   --salmon: #F88E8E;
   --light-salmon: #FFD3D3;
+  --background-pricing: #2b2b2b ;
+}
+
+h3 {
+  font-size: 1.9rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
 }
 
 header {
@@ -55,6 +62,7 @@ header ul li {
   font-size: 2rem;
   color: var(--title-dark-color);
   margin-bottom: 1rem;
+  font-weight: 600;
 }
 .presentation .presentation-main .presentation-text p {
   font-weight: 500;
@@ -86,11 +94,6 @@ header ul li {
 }
 .main-features .first-feature .text {
   padding: 1.5rem;
-}
-.main-features .first-feature .text h3 {
-  font-size: 1.9rem;
-  font-weight: 500;
-  margin-bottom: 1rem;
 }
 .main-features .first-feature .text p {
   color: var(--text-dark-color);
@@ -128,9 +131,6 @@ header ul li {
 }
 .main-features div .second-feature .text h3 {
   color: var(--text-light-color);
-  font-size: 1.9rem;
-  font-weight: 500;
-  margin-bottom: 1rem;
 }
 .main-features div .second-feature .image {
   padding: 2rem;
@@ -147,9 +147,6 @@ header ul li {
 }
 .main-features div .third-feature .text h3 {
   color: var(--text-light-color);
-  font-size: 1.9rem;
-  font-weight: 500;
-  margin-bottom: 1rem;
 }
 .main-features div .third-feature .image {
   padding: 2rem;
@@ -197,6 +194,7 @@ header ul li {
 }
 .premium-features .lastest-release {
   margin: 1rem;
+  margin-bottom: 4rem;
   padding: 1.5rem 1rem 0 1rem;
   background-color: var(--salmon);
   border-radius: 30px;
@@ -214,9 +212,6 @@ header ul li {
   color: black;
 }
 .premium-features .lastest-release .text h3 {
-  font-size: 1.9rem;
-  font-weight: 500;
-  margin-bottom: 1rem;
   color: var(--text-light-color);
 }
 .premium-features .lastest-release .text p {
@@ -227,6 +222,91 @@ header ul li {
   width: 100%;
   display: flex;
   justify-content: center;
+}
+
+.pricing {
+  margin: 1rem;
+  background-color: var(--background-pricing);
+  border-radius: 30px;
+  padding: 1rem;
+}
+.pricing h3 {
+  color: var(--text-light-color);
+  padding: 0 2rem;
+  text-align: center;
+}
+.pricing p {
+  color: var(--text-light-color);
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.pricing .call-to-action {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0 1.5rem;
+  margin: 2rem 0;
+}
+.pricing .call-to-action button {
+  border: none;
+  padding: 0.5rem 1rem;
+  background-color: var(--light-blue);
+  color: var(--text-light-color);
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+.pricing .call-to-action button img {
+  margin-left: 0.5rem;
+}
+.pricing .offers {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow: scroll;
+}
+.pricing .offers article {
+  width: 280px;
+  background-color: white;
+  border-radius: 15px;
+  padding: 2rem;
+  margin: 0 1rem;
+}
+.pricing .offers article h5 {
+  text-align: center;
+  color: var(--title-dark-color);
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.pricing .offers article .price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.pricing .offers article .price p {
+  color: black;
+  font-size: 3rem;
+  margin-right: 0.5rem;
+  font-weight: 600;
+}
+.pricing .offers article ul {
+  margin-bottom: 2rem;
+  list-style: none;
+}
+.pricing .offers article ul li {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+.pricing .offers article ul li img {
+  margin-right: 1rem;
+}
+.pricing .offers article .call-to-action {
+  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
