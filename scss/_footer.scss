@@ -1,0 +1,121 @@
+footer{
+    border-top: 1px solid #d6d6d6;
+    padding: 1rem;
+
+    .footer-title{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .footer-headline{
+            display: flex;
+            align-items: center;
+
+            .logo{
+                border: 1px solid #d6d6d6;
+                border-radius: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 1rem;
+            }
+
+            p{
+                margin-left: 1rem;
+                font-size: 1.3rem;
+                font-weight: 600;
+            }
+        }
+        .call-to-action{
+            width: 100%;
+            margin: 2rem 0;
+    
+            button{
+                border: none;
+                padding: 0.5rem 1rem;
+                background-color: var(--light-blue);
+                color: var(--text-light-color);
+                font-size: 1rem;
+                font-weight: 500;
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+    
+                img{
+                    margin-left: 0.5rem;
+                }
+            }
+        }
+    }
+
+    .footer-content{
+        display: flex;
+        flex-wrap: wrap;
+
+        .infos{
+            margin-bottom: 1.5rem;
+
+            h4{
+                font-size: 1.2rem;
+                margin-bottom: 1rem;
+            }
+
+            ul{
+                list-style: none;
+
+                li{
+                    margin-bottom: 0.5rem;
+
+                    a{
+                        color: black;
+                        text-decoration: none;
+                    
+                    }
+                }
+            }
+        }
+
+        .footer-contact{
+            line-height: 2.5rem;
+
+            h4{
+                font-size: 1.2rem;
+                margin-bottom: 1rem;
+            }
+
+            p{
+                margin-bottom: 2rem;
+            }
+
+            .input-mail{
+                width: 100%;
+                border: 1px solid #484848;
+                border-radius: 15px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                
+                input{
+                    border: none;
+                    border-radius: 15px;
+                    width: 90%;
+                    padding-left: 1rem;
+                    outline: none;
+                }
+
+                .call-to-action{
+                    margin: 0.2rem;
+
+                    button{
+                        border: none;
+                        padding: 1rem;
+                        background-color: var(--light-blue);
+                        border-radius: 10px;
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+}
