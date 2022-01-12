@@ -8,12 +8,6 @@
   --background-pricing: #2b2b2b ;
 }
 
-h3 {
-  font-size: 1.9rem;
-  font-weight: 500;
-  margin-bottom: 1rem;
-}
-
 header {
   display: flex;
   justify-content: space-between;
@@ -48,6 +42,12 @@ header ul li {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
+}
+
+h3 {
+  font-size: 1.9rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
 }
 
 .presentation .presentation-main {
@@ -229,6 +229,7 @@ header ul li {
   background-color: var(--background-pricing);
   border-radius: 30px;
   padding: 1rem;
+  margin-bottom: 4rem;
 }
 .pricing h3 {
   color: var(--text-light-color);
@@ -266,7 +267,7 @@ header ul li {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  overflow: scroll;
+  overflow: auto;
 }
 .pricing .offers article {
   width: 280px;
@@ -307,6 +308,99 @@ header ul li {
 }
 .pricing .offers article .call-to-action {
   margin: 0;
+}
+
+.blog {
+  margin: 1rem;
+}
+.blog .blog-section-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.blog .blog-section-title h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.blog .blog-section-title .call-to-action {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.blog .blog-section-title .call-to-action button {
+  border: none;
+  padding: 1rem 2rem;
+  background-color: var(--light-blue);
+  color: var(--text-light-color);
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+.blog .blog-section-title .call-to-action button img {
+  margin-left: 0.5rem;
+}
+.blog .list-blog {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.blog .list-blog article {
+  height: 22rem;
+  width: 24rem;
+  margin-bottom: 2rem;
+}
+.blog .list-blog article .first-blog {
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.8)), url("../img/blog1.png");
+  border-radius: 30px;
+}
+.blog .list-blog article .second-blog {
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.8)), url("../img/blog2.png");
+  border-radius: 30px;
+}
+.blog .list-blog article .third-blog {
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.8)), url("../img/blog3.png");
+  border-radius: 30px;
+}
+.blog .list-blog article .text-blog {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.blog .list-blog article .text-blog .theme {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.blog .list-blog article .text-blog .theme p {
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  border-radius: 17px;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-weight: 500;
+  color: black;
+}
+.blog .list-blog article .text-blog .blog-headline span {
+  color: var(--text-light-color);
+  font-weight: 500;
+}
+.blog .list-blog article .text-blog .blog-headline h4 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: var(--text-light-color);
 }
 
 /*# sourceMappingURL=style.css.map */
