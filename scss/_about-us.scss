@@ -1,0 +1,113 @@
+.about-us{
+    margin: 1rem;
+    margin-bottom: 4rem;
+
+    .about-us-section-title{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        h2{
+            font-size: 2rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+        .call-to-action{
+            width: 100%;
+            margin-bottom: 2rem;
+
+            button{
+                border: none;
+                padding: 1rem 2rem;
+                background-color: var(--light-blue);
+                color: var(--text-light-color);
+                font-size: 1rem;
+                font-weight: 500;
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+
+                img{
+                    margin-left: 0.5rem;
+                }
+            }
+        }
+    }
+
+    article{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        border-radius: 30px;
+        padding: 1rem;
+        background-color: #F7F7F7;
+
+        .text-about-us{
+            h3{
+                color: var(--title-dark-color);
+            }
+
+            p{
+                font-weight: 500;
+                color: var(--text-dark-color);
+            }
+        }
+
+        .team{
+            margin-top: 2rem;
+            width: 100%;
+
+            .member1{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                border-radius: 15px;
+                padding: 1rem;
+                margin-bottom: 1rem;
+                background-color: var(--salmon);
+            }
+
+            .member2{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                border-radius: 15px;
+                padding: 1rem;
+                margin-bottom: 1rem;
+                background-color: var(--light-blue);
+            }
+
+            .member3{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                border-radius: 15px;
+                padding: 1rem;
+                margin-bottom: 1rem;
+                background-color: var(--background-pricing);
+            }
+
+            img{
+                margin-right: 1rem;
+            }
+
+            .member-infos{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            p{
+                color: var(--text-light-color);
+                font-size: 1.2rem;
+                font-weight: 500;
+            }
+
+            span{
+                color: var(--text-light-color);
+                opacity: 0.5;
+            }
+        }
+    }
+}

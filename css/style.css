@@ -5,7 +5,7 @@
   --light-blue: #7EAAFE;
   --salmon: #F88E8E;
   --light-salmon: #FFD3D3;
-  --background-pricing: #2b2b2b ;
+  --background-pricing: #2b2b2b;
 }
 
 header {
@@ -397,10 +397,107 @@ h3 {
   font-weight: 500;
 }
 .blog .list-blog article .text-blog .blog-headline h4 {
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   font-weight: 500;
   margin-bottom: 1rem;
   color: var(--text-light-color);
+}
+
+.about-us {
+  margin: 1rem;
+  margin-bottom: 4rem;
+}
+.about-us .about-us-section-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.about-us .about-us-section-title h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.about-us .about-us-section-title .call-to-action {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.about-us .about-us-section-title .call-to-action button {
+  border: none;
+  padding: 1rem 2rem;
+  background-color: var(--light-blue);
+  color: var(--text-light-color);
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+.about-us .about-us-section-title .call-to-action button img {
+  margin-left: 0.5rem;
+}
+.about-us article {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-radius: 30px;
+  padding: 1rem;
+  background-color: #F7F7F7;
+}
+.about-us article .text-about-us h3 {
+  color: var(--title-dark-color);
+}
+.about-us article .text-about-us p {
+  font-weight: 500;
+  color: var(--text-dark-color);
+}
+.about-us article .team {
+  margin-top: 2rem;
+  width: 100%;
+}
+.about-us article .team .member1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  border-radius: 15px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: var(--salmon);
+}
+.about-us article .team .member2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  border-radius: 15px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: var(--light-blue);
+}
+.about-us article .team .member3 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  border-radius: 15px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: var(--background-pricing);
+}
+.about-us article .team img {
+  margin-right: 1rem;
+}
+.about-us article .team .member-infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.about-us article .team p {
+  color: var(--text-light-color);
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.about-us article .team span {
+  color: var(--text-light-color);
+  opacity: 0.5;
 }
 
 /*# sourceMappingURL=style.css.map */
