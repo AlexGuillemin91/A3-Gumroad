@@ -1,46 +1,64 @@
 .premium-features{
-    h2{
-        text-align: center;
-        font-size: 2rem;
-        font-weight: 500;
-        margin-bottom: 1rem;
-    }
-    .call-to-action{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        padding: 0 1.5rem;
-        margin-bottom: 2rem;
-
-        button{
-            border: none;
-            padding: 1rem 2rem;
-            background-color: var(--light-blue);
-            color: var(--text-light-color);
-            font-size: 1rem;
-            font-weight: 500;
-            border-radius: 10px;
+    .premium-features-title{
+        @include medium{
             display: flex;
-            align-items: center;
+            justify-content: space-between;
+            margin: 0 5rem;
+        }
 
-            img{
-                margin-left: 0.5rem;
+        h2{
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+        .call-to-action{
+            display: flex;
+            justify-content: center;
+            padding: 0 1.5rem;
+            margin-bottom: 2rem;
+    
+            button{
+                border: none;
+                padding: 1rem 2rem;
+                background-color: var(--light-blue);
+                color: var(--text-light-color);
+                font-size: 1rem;
+                font-weight: 500;
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+    
+                img{
+                    margin-left: 0.5rem;
+                }
             }
         }
     }
 
-    .feature{
-        margin: 2rem 1rem;
-
-        .feature-text{
-            h4{
-                font-size: 1.5rem;
-                font-weight: 500;
+    .premium-features-list{
+        @include medium{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 0 4rem;
+        }
+        .feature{
+            margin: 2rem 1rem;
+            @include medium{
+                width: 20rem;
             }
-
-            p{
-                color: var(--text-dark-color);
-                font-weight: 500;
+    
+            .feature-text{
+                h4{
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                }
+    
+                p{
+                    color: var(--text-dark-color);
+                    font-weight: 500;
+                }
             }
         }
     }

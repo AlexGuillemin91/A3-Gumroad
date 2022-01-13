@@ -120,6 +120,11 @@ h3 {
 .presentation .presentation-main .presentation-text {
   margin: 1rem;
 }
+@media screen and (min-width: 1200px) {
+  .presentation .presentation-main .presentation-text {
+    margin: 0;
+  }
+}
 .presentation .presentation-main .presentation-text h1 {
   font-size: 2rem;
   color: var(--title-dark-color);
@@ -146,7 +151,7 @@ h3 {
 }
 @media screen and (min-width: 800px) {
   .presentation .presentation-main .presentation-text {
-    width: 48%;
+    width: 50%;
     padding: 2rem;
   }
 }
@@ -160,7 +165,7 @@ h3 {
 }
 @media screen and (min-width: 800px) {
   .presentation .presentation-main .presentation-image {
-    width: 48%;
+    width: 50%;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -273,6 +278,7 @@ h3 {
   background-color: var(--light-blue);
   border-radius: 30px;
   height: 450px;
+  margin-bottom: 1rem;
 }
 @media screen and (min-width: 800px) {
   .main-features .secondary-features .second-feature {
@@ -312,20 +318,26 @@ h3 {
   justify-content: center;
 }
 
-.premium-features h2 {
+@media screen and (min-width: 800px) {
+  .premium-features .premium-features-title {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5rem;
+  }
+}
+.premium-features .premium-features-title h2 {
   text-align: center;
   font-size: 2rem;
   font-weight: 500;
   margin-bottom: 1rem;
 }
-.premium-features .call-to-action {
-  width: 100%;
+.premium-features .premium-features-title .call-to-action {
   display: flex;
   justify-content: center;
   padding: 0 1.5rem;
   margin-bottom: 2rem;
 }
-.premium-features .call-to-action button {
+.premium-features .premium-features-title .call-to-action button {
   border: none;
   padding: 1rem 2rem;
   background-color: var(--light-blue);
@@ -336,17 +348,30 @@ h3 {
   display: flex;
   align-items: center;
 }
-.premium-features .call-to-action button img {
+.premium-features .premium-features-title .call-to-action button img {
   margin-left: 0.5rem;
 }
-.premium-features .feature {
+@media screen and (min-width: 800px) {
+  .premium-features .premium-features-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 4rem;
+  }
+}
+.premium-features .premium-features-list .feature {
   margin: 2rem 1rem;
 }
-.premium-features .feature .feature-text h4 {
+@media screen and (min-width: 800px) {
+  .premium-features .premium-features-list .feature {
+    width: 20rem;
+  }
+}
+.premium-features .premium-features-list .feature .feature-text h4 {
   font-size: 1.5rem;
   font-weight: 500;
 }
-.premium-features .feature .feature-text p {
+.premium-features .premium-features-list .feature .feature-text p {
   color: var(--text-dark-color);
   font-weight: 500;
 }
