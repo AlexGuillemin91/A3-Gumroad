@@ -1,13 +1,9 @@
-# Title
+# Presentation
 
 Template Alex GUILLEMIN
 
 Landing page with differents sections for e-commerce
-Here is an example with a 
-
-## To begin
-
-Thank you for purchasing this template, may it get you hundreds of job interviews
+Here is an example with a e-commerce app for sport.
 
 ### Installation
 
