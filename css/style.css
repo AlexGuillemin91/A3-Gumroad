@@ -101,6 +101,16 @@ h3 {
   font-weight: 500;
   margin-bottom: 1rem;
 }
+@media screen and (min-width: 1200px) {
+  h3 {
+    font-size: 2.3rem;
+  }
+}
+@media screen and (min-width: 1600px) {
+  h3 {
+    font-size: 2.8rem;
+  }
+}
 
 .presentation .presentation-main {
   display: flex;
@@ -178,30 +188,64 @@ h3 {
 .main-features {
   display: flex;
   flex-wrap: wrap;
-  margin: 5rem 1rem;
+  margin: 3rem 1rem;
+}
+@media screen and (min-width: 800px) {
+  .main-features {
+    margin: 3rem 5rem;
+  }
 }
 .main-features .first-feature {
   width: 100%;
   background-color: #F7F7F7;
   border-radius: 30px;
+  padding: 1rem;
 }
-.main-features .first-feature .text {
+@media screen and (min-width: 800px) {
+  .main-features .first-feature .first-feature-flex {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.main-features .first-feature .first-feature-flex .text {
   padding: 1.5rem;
 }
-.main-features .first-feature .text p {
+.main-features .first-feature .first-feature-flex .text p {
   color: var(--text-dark-color);
   font-weight: 500;
 }
-.main-features .first-feature .image {
+@media screen and (min-width: 1200px) {
+  .main-features .first-feature .first-feature-flex .text p {
+    font-size: 1.5rem;
+  }
+}
+.main-features .first-feature .first-feature-flex .image {
+  width: 100%;
+  margin: 1rem 0;
   padding: 2rem;
   display: flex;
   justify-content: center;
+}
+@media screen and (min-width: 800px) {
+  .main-features .first-feature .first-feature-flex .image {
+    padding: 0;
+  }
+  .main-features .first-feature .first-feature-flex .image img {
+    width: 100%;
+    height: 100%;
+  }
 }
 .main-features .first-feature .call-to-action {
   width: 100%;
   display: flex;
   justify-content: flex-end;
   padding: 0 1.5rem;
+}
+@media screen and (min-width: 800px) {
+  .main-features .first-feature .call-to-action {
+    width: 80%;
+    justify-content: center;
+  }
 }
 .main-features .first-feature .call-to-action button {
   border: none;
@@ -210,38 +254,59 @@ h3 {
   color: var(--text-light-color);
   border-radius: 10px;
 }
-.main-features div {
+@media screen and (min-width: 800px) {
+  .main-features .first-feature .call-to-action button {
+    font-size: 1.5rem;
+  }
+}
+.main-features .secondary-features {
   width: 100%;
   margin: 1rem 0;
 }
-.main-features div .second-feature {
+@media screen and (min-width: 800px) {
+  .main-features .secondary-features {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.main-features .secondary-features .second-feature {
   background-color: var(--light-blue);
   border-radius: 30px;
   height: 450px;
 }
-.main-features div .second-feature .text {
+@media screen and (min-width: 800px) {
+  .main-features .secondary-features .second-feature {
+    width: 48%;
+  }
+}
+.main-features .secondary-features .second-feature .text {
   padding: 1.5rem;
 }
-.main-features div .second-feature .text h3 {
+.main-features .secondary-features .second-feature .text h3 {
   color: var(--text-light-color);
 }
-.main-features div .second-feature .image {
+.main-features .secondary-features .second-feature .image {
   padding: 2rem;
   display: flex;
   justify-content: center;
 }
-.main-features div .third-feature {
+.main-features .secondary-features .third-feature {
   background-color: #2B2B2B;
   border-radius: 30px;
   height: 450px;
 }
-.main-features div .third-feature .text {
+@media screen and (min-width: 800px) {
+  .main-features .secondary-features .third-feature {
+    width: 48%;
+  }
+}
+.main-features .secondary-features .third-feature .text {
   padding: 1.5rem;
 }
-.main-features div .third-feature .text h3 {
+.main-features .secondary-features .third-feature .text h3 {
   color: var(--text-light-color);
 }
-.main-features div .third-feature .image {
+.main-features .secondary-features .third-feature .image {
   padding: 2rem;
   display: flex;
   justify-content: center;
