@@ -372,6 +372,11 @@ h3 {
     width: 20rem;
   }
 }
+@media screen and (min-width: 1600px) {
+  .premium-features .premium-features-list .feature {
+    width: 30rem;
+  }
+}
 .premium-features .premium-features-list .feature .feature-text h4 {
   font-size: 1.5rem;
   font-weight: 500;

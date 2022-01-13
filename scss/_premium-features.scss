@@ -48,6 +48,10 @@
             @include medium{
                 width: 20rem;
             }
+
+            @include x-large{
+                width: 30rem;
+            }
     
             .feature-text{
                 h4{
