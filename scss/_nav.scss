@@ -19,14 +19,39 @@ header{
       }
     }
 
-    ul{
-        list-style: none;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+    .menu {
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 10;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: #000;
+      list-style: none;
+      transition: top 1s ease;
+      display: none;
 
-        li{
-          padding: 0 1rem;
+      li{
+        a{
+          color: var(--text-light-color);
+          font-size: 2rem;
+          font-weight: 600;
         }
+      }
+
+      .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+      }
+    }
+    .openMenu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 }

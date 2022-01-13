@@ -27,14 +27,36 @@ header a h2 {
   color: black;
   margin-left: 1rem;
 }
-header ul {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
+header .menu {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  background: #000;
+  list-style: none;
+  transition: top 1s ease;
+  display: none;
 }
-header ul li {
-  padding: 0 1rem;
+header .menu li a {
+  color: var(--text-light-color);
+  font-size: 2rem;
+  font-weight: 600;
+}
+header .menu .closeMenu {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+header .openMenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 * {
@@ -569,7 +591,7 @@ footer .footer-content .infos ul li a {
   text-decoration: none;
 }
 footer .footer-content .footer-contact {
-  line-height: 2.5rem;
+  line-height: 2rem;
 }
 footer .footer-content .footer-contact h4 {
   font-size: 1.2rem;
@@ -585,6 +607,7 @@ footer .footer-content .footer-contact .input-mail {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  margin-bottom: 1rem;
 }
 footer .footer-content .footer-contact .input-mail input {
   border: none;
