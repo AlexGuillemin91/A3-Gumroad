@@ -1,6 +1,9 @@
 .about-us{
     margin: 1rem;
     margin-bottom: 4rem;
+    @include medium{
+        margin: 4rem 5rem;
+    }
 
     .about-us-section-title{
         display: flex;
@@ -14,7 +17,6 @@
             margin-bottom: 1rem;
         }
         .call-to-action{
-            width: 100%;
             margin-bottom: 2rem;
 
             button{
@@ -38,12 +40,16 @@
     article{
         display: flex;
         flex-direction: row;
+        justify-content: space-around;
         flex-wrap: wrap;
         border-radius: 30px;
         padding: 1rem;
         background-color: #F7F7F7;
 
         .text-about-us{
+            @include medium{
+                width: 45%;
+            }
             h3{
                 color: var(--title-dark-color);
             }
@@ -57,6 +63,9 @@
         .team{
             margin-top: 2rem;
             width: 100%;
+            @include medium{
+                width: 45%;
+            }
 
             .member1{
                 display: flex;

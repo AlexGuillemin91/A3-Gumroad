@@ -1,5 +1,8 @@
 .blog{
     margin: 1rem;
+    @include medium{
+        margin: 0 5rem;
+    }
 
     .blog-section-title{
         display: flex;
@@ -7,13 +10,13 @@
         justify-content: space-between;
         flex-wrap: wrap;
 
+
         h2{
             font-size: 2rem;
             font-weight: 500;
             margin-bottom: 1rem;
         }
         .call-to-action{
-            width: 100%;
             margin-bottom: 2rem;
 
             button{

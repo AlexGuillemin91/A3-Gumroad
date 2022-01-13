@@ -529,6 +529,11 @@ h3 {
 .blog {
   margin: 1rem;
 }
+@media screen and (min-width: 800px) {
+  .blog {
+    margin: 0 5rem;
+  }
+}
 .blog .blog-section-title {
   display: flex;
   flex-direction: row;
@@ -541,7 +546,6 @@ h3 {
   margin-bottom: 1rem;
 }
 .blog .blog-section-title .call-to-action {
-  width: 100%;
   margin-bottom: 2rem;
 }
 .blog .blog-section-title .call-to-action button {
@@ -623,6 +627,11 @@ h3 {
   margin: 1rem;
   margin-bottom: 4rem;
 }
+@media screen and (min-width: 800px) {
+  .about-us {
+    margin: 4rem 5rem;
+  }
+}
 .about-us .about-us-section-title {
   display: flex;
   flex-direction: row;
@@ -635,7 +644,6 @@ h3 {
   margin-bottom: 1rem;
 }
 .about-us .about-us-section-title .call-to-action {
-  width: 100%;
   margin-bottom: 2rem;
 }
 .about-us .about-us-section-title .call-to-action button {
@@ -655,10 +663,16 @@ h3 {
 .about-us article {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
   flex-wrap: wrap;
   border-radius: 30px;
   padding: 1rem;
   background-color: #F7F7F7;
+}
+@media screen and (min-width: 800px) {
+  .about-us article .text-about-us {
+    width: 45%;
+  }
 }
 .about-us article .text-about-us h3 {
   color: var(--title-dark-color);
@@ -670,6 +684,11 @@ h3 {
 .about-us article .team {
   margin-top: 2rem;
   width: 100%;
+}
+@media screen and (min-width: 800px) {
+  .about-us article .team {
+    width: 45%;
+  }
 }
 .about-us article .team .member1 {
   display: flex;
@@ -720,16 +739,37 @@ footer {
   border-top: 1px solid #d6d6d6;
   padding: 1rem;
 }
+@media screen and (min-width: 800px) {
+  footer {
+    padding: 0;
+  }
+}
 footer .footer-title {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
+@media screen and (min-width: 800px) {
+  footer .footer-title {
+    background-color: var(--light-blue);
+    border-radius: 15px;
+    align-items: center;
+    padding: 2rem;
+    margin: 2rem 5rem;
+  }
+}
 footer .footer-title .footer-headline {
   display: flex;
   align-items: center;
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 800px) {
+  footer .footer-title .footer-headline {
+    margin: 0;
+  }
 }
 footer .footer-title .footer-headline .logo {
+  background-color: white;
   border: 1px solid #d6d6d6;
   border-radius: 15px;
   display: flex;
@@ -742,9 +782,10 @@ footer .footer-title .footer-headline p {
   font-size: 1.3rem;
   font-weight: 600;
 }
-footer .footer-title .call-to-action {
-  width: 100%;
-  margin-top: 2rem;
+@media screen and (min-width: 800px) {
+  footer .footer-title .footer-headline p {
+    color: var(--text-light-color);
+  }
 }
 footer .footer-title .call-to-action button {
   border: none;
@@ -757,12 +798,23 @@ footer .footer-title .call-to-action button {
   display: flex;
   align-items: center;
 }
+@media screen and (min-width: 800px) {
+  footer .footer-title .call-to-action button {
+    background-color: #ADC9FF;
+  }
+}
 footer .footer-title .call-to-action button img {
   margin-left: 0.5rem;
 }
 footer .footer-content {
   display: flex;
   flex-wrap: wrap;
+}
+@media screen and (min-width: 800px) {
+  footer .footer-content {
+    margin: 1rem 5rem;
+    justify-content: space-around;
+  }
 }
 footer .footer-content .infos {
   margin: 1.5rem 1rem;
@@ -783,6 +835,7 @@ footer .footer-content .infos ul li a {
 }
 footer .footer-content .footer-contact {
   line-height: 2rem;
+  padding: 1.5rem 1rem;
 }
 footer .footer-content .footer-contact h4 {
   font-size: 1.2rem;
