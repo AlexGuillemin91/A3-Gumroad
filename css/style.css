@@ -42,10 +42,33 @@ header .menu {
   transition: top 1s ease;
   display: none;
 }
+@media screen and (min-width: 800px) {
+  header .menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    height: 100%;
+    position: relative;
+    background: none;
+    top: 0;
+  }
+}
 header .menu li a {
   color: var(--text-light-color);
   font-size: 2rem;
   font-weight: 600;
+}
+@media screen and (min-width: 800px) {
+  header .menu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+  }
 }
 header .menu .closeMenu {
   display: block;
@@ -57,6 +80,12 @@ header .openMenu {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media screen and (min-width: 800px) {
+  header .openMenu {
+    font-size: 2rem;
+    display: none;
+  }
 }
 
 * {
@@ -87,22 +116,63 @@ h3 {
   margin-bottom: 1rem;
   font-weight: 600;
 }
+@media screen and (min-width: 1200px) {
+  .presentation .presentation-main .presentation-text h1 {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .presentation .presentation-main .presentation-text h1 {
+    font-size: 3rem;
+  }
+}
 .presentation .presentation-main .presentation-text p {
   font-weight: 500;
 }
+@media screen and (min-width: 1200px) {
+  .presentation .presentation-main .presentation-text p {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 800px) {
+  .presentation .presentation-main .presentation-text {
+    width: 48%;
+    padding: 2rem;
+  }
+}
 .presentation .presentation-main .presentation-image {
   width: 100%;
-  height: 300px;
+  height: 19rem;
   background-image: url("../img/presentation-phone.png");
   background-repeat: no-repeat;
   background-position: 50% 0%;
   background-size: 150%;
+}
+@media screen and (min-width: 800px) {
+  .presentation .presentation-main .presentation-image {
+    width: 48%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .presentation .presentation-main .presentation-image {
+    height: 30rem;
+  }
 }
 .presentation h2 {
   font-size: 2rem;
   font-weight: 500;
   text-align: center;
   margin: 1rem;
+}
+@media screen and (min-width: 1200px) {
+  .presentation h2 {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .presentation h2 {
+    font-size: 3rem;
+  }
 }
 
 .main-features {
@@ -553,7 +623,7 @@ footer .footer-title .footer-headline p {
 }
 footer .footer-title .call-to-action {
   width: 100%;
-  margin: 2rem 0;
+  margin-top: 2rem;
 }
 footer .footer-title .call-to-action button {
   border: none;
@@ -574,7 +644,7 @@ footer .footer-content {
   flex-wrap: wrap;
 }
 footer .footer-content .infos {
-  margin-bottom: 1.5rem;
+  margin: 1.5rem 1rem;
 }
 footer .footer-content .infos h4 {
   font-size: 1.2rem;
