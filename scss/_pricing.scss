@@ -5,6 +5,10 @@
     padding: 1rem;
     margin-bottom: 4rem;
 
+    @include medium{
+        margin: 4rem 5rem;
+    }
+
     h3{
         color: var(--text-light-color);
         padding: 0 2rem;
@@ -47,6 +51,10 @@
         flex-direction: row;
         flex-wrap: nowrap;
         overflow: auto;
+
+        @include large{
+            justify-content: space-around;
+        }
         
         article{
             width: 100%;

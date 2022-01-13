@@ -69,8 +69,19 @@
         padding: 1.5rem 1rem 0 1rem;
         background-color: var(--salmon);
         border-radius: 30px;
+        @include medium{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: nowrap;
+            height: 450px;
+            margin: 1rem 5rem;
+        }
 
         .text{
+            @include medium{
+                width: 50%;
+            }
             .news{
                 width: 100%;
                 margin-bottom: 2rem;
@@ -99,6 +110,11 @@
             width: 100%;
             display: flex;
             justify-content: center;
+
+            @include medium{
+                width: 50%;
+                overflow: hidden;
+            }
         }
     }
 }
