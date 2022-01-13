@@ -39,7 +39,6 @@ header .menu {
   align-items: center;
   background: #000;
   list-style: none;
-  transition: top 1s ease;
   display: none;
 }
 @media screen and (min-width: 800px) {
@@ -53,7 +52,7 @@ header .menu {
     height: 100%;
     position: relative;
     background: none;
-    top: 0;
+    top: 0 !important;
   }
 }
 header .menu li a {
@@ -64,6 +63,7 @@ header .menu li a {
 @media screen and (min-width: 800px) {
   header .menu li a {
     display: inline-block;
+    font-weight: 500;
     padding: 15px;
     text-decoration: none;
     font-size: 1.5rem;
@@ -75,6 +75,11 @@ header .menu .closeMenu {
   position: absolute;
   top: 20px;
   right: 20px;
+}
+@media screen and (min-width: 800px) {
+  header .menu .closeMenu {
+    display: none;
+  }
 }
 header .openMenu {
   display: flex;

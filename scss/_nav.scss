@@ -31,7 +31,6 @@ header{
       align-items: center;
       background: #000;
       list-style: none;
-      transition: top 1s ease;
       display: none;
 
       @include medium {
@@ -44,7 +43,7 @@ header{
         height: 100%;
         position: relative;
         background: none;
-        top: 0;
+        top: 0 !important; 
       }
 
       li{
@@ -55,6 +54,7 @@ header{
 
           @include medium{
             display: inline-block;
+            font-weight: 500;
             padding: 15px;
             text-decoration: none;
             font-size: 1.5rem;
@@ -68,6 +68,10 @@ header{
         position: absolute;
         top: 20px;
         right: 20px;
+
+        @include medium{
+          display: none;
+        }
       }
     }
     .openMenu {
